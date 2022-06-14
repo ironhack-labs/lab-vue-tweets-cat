@@ -69,7 +69,7 @@ A `App.vue` , tenim una matriu anomenada `tweetsArray` que conté objectes que r
 
 Passeu el primer objecte de dades dels `tweets` com a complement al component `Tweet` :
 
-```js
+```vue
 <!-- src/App.vue -->
 <!-- ... -->
 
@@ -102,9 +102,10 @@ A les iteracions següents, haureu de refactoritzar el component `Tweet` . Se us
 
 **Quan s'hagin acabat amb totes les iteracions** , la versió final del vostre component `Tweet` tindrà aquest aspecte:
 
-<details><summary> Feu clic per veure el codi </summary>
+<details>
+<summary> Feu clic per veure el codi </summary>
 
-```js
+```vue
 <!-- FINAL VERSION -->
 
 <template>
@@ -141,7 +142,9 @@ export default {
 
 Ho fareu en les properes iteracions, pas a pas. Anireu substituint les parts d'HTML a mesura que creeu cada component nou.
 
-<hr/><br/>
+<hr>
+<br>
+</details>
 
 ### Iteració 4 | Component ProfileImage
 
@@ -149,7 +152,7 @@ Ho fareu en les properes iteracions, pas a pas. Anireu substituint les parts d'H
 
 Extraieu l'etiqueta `img` existent i representa-la mitjançant el component `ProfileImage` :
 
-```jsx
+```vuex
 <img src="IMAGE_URL" className="profile" alt="profile"/>
 ```
 
@@ -157,7 +160,7 @@ Extraieu l'etiqueta `img` existent i representa-la mitjançant el component `Pro
 
 Un cop fet, importeu el component `ProfileImage` a `Tweet.js` . Després d'importar-lo, renderitza el component dins de `Tweet` de la manera següent:
 
-```js
+```vue
 <!-- ... -->
 <template>
   <div className="tweet">
@@ -175,7 +178,7 @@ Un cop fet, importeu el component `ProfileImage` a `Tweet.js` . Després d'impor
 
 Extreu les etiquetes d' `span` existents que mostren la informació de l'usuari i representa'ls mitjançant el component `User` :
 
-```js
+```vue
 <span className="user">
   <span className="name"> USER_NAME </span>
   <span className="handle">@ USER_HANDLE</span>
@@ -186,7 +189,7 @@ Extreu les etiquetes d' `span` existents que mostren la informació de l'usuari 
 
 Importeu el component `User` a `Tweet.js` . Després d'importar-lo, renderitza el component dins de `Tweet` de la manera següent:
 
-```js
+```vue
 <!-- ... -->
 
 <template>
@@ -210,7 +213,7 @@ Hem passat l'objecte amb la informació de l'usuari a través del prop `userData
 
 Extraieu l'etiqueta d' `span` existent que mostra la informació de *marca* de temps i representa-la mitjançant el component `Timestamp` de temps:
 
-```jsx
+```vuex
 <span className="timestamp"> TWEET_TIMESTAMP </span>
 ```
 
@@ -218,7 +221,7 @@ Extraieu l'etiqueta d' `span` existent que mostra la informació de *marca* de t
 
 Importeu el component `Timestamp` a `Tweet.js` . Després d'importar-lo, renderitza el component dins de `Tweet` de la manera següent:
 
-```js
+```vue
 <!-- ... -->
 
 <template>
@@ -243,7 +246,7 @@ Importeu el component `Timestamp` a `Tweet.js` . Després d'importar-lo, renderi
 
 Extreu l'etiqueta `p` existent i representa-la mitjançant el component `Message` :
 
-```jsx
+```vuex
 <p className="message"> TWEET_MESSAGE </p>
 ```
 
@@ -251,7 +254,7 @@ Extreu l'etiqueta `p` existent i representa-la mitjançant el component `Message
 
 Quan acabeu, importeu el component `Message` i representeu-lo al `Tweet.js` de la manera següent:
 
-```js
+```vue
 <!-- ... -->
 
 <template>
@@ -278,7 +281,7 @@ Quan acabeu, importeu el component `Message` i representeu-lo al `Tweet.js` de l
 
 Extreu l'etiqueta `div.actions` del missatge existent i representa-la mitjançant el component `Actions` :
 
-```jsx
+```vuex
     <div className="actions">
       <i class="far fa-comment"></i>
       <i class="fas fa-retweet"></i>
@@ -291,7 +294,7 @@ Extreu l'etiqueta `div.actions` del missatge existent i representa-la mitjançan
 
 Quan acabeu, importeu el component `Actions` i representeu-lo al `Tweet.js` així:
 
-```js
+```vue
 <!-- ... -->
 
 <template>
