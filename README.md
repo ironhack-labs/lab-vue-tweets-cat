@@ -17,7 +17,7 @@ Clonarem una peça existent d'IU des d'una aplicació popular, Twitter. Comencem
 - Obriu el LAB i comenceu:
 
   ```bash
-   $ cd lab-vue-tweets
+   $ cd lab-vue-tweets-cat
    $ yarn install
    $ yarn dev
   ```
